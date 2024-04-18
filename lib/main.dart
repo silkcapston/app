@@ -15,60 +15,63 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // 디버그 모드에서 "Debug" 레이블 숨기기
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           leading: Image.asset('assets/images/log.png'),
-          // 이미지 추가
+          leadingWidth: 80,
           actions: [
             IconButton(
               icon: Icon(
                 Icons.search,
-                color: Colors.black, // 아이콘 색상 설정
+                color: Colors.black,
               ),
-              onPressed: () {
-                // 검색 아이콘을 눌렀을 때의 동작을 정의합니다.
-                // 예를 들어, 검색 화면으로 이동할 수 있습니다.
-              },
+              onPressed: () {},
             ),
+            IconButton(
+              onPressed: () {}, icon: Icon(
+              Icons.notifications_outlined,
+              color: Colors.black,
+            ),
+            ),
+
           ],
         ),
-        body: Container(
-          // 네비게이션 바를 제외한 나머지 내용을 배치합니다.
+        body: Center(
+          child: Container(
+            child:ListView(),
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined),
-              label: 'Home',
+              label: '',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.favorite_outlined),
-              label: 'Favorites',
+              label: '',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.edit_outlined),
-              label: 'Edit',
+              label: '',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.sms_outlined),
-              label: 'Messages',
+              label: '',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person_outlined),
-              label: 'Profile',
+              label: '',
             ),
           ],
-          // 현재 선택된 항목의 인덱스를 지정합니다.
           currentIndex: 0,
-          // 항목이 선택될 때 호출될 콜백 함수를 지정합니다.
-          onTap: (int index) {
-            // 네비게이션 바의 항목을 탭할 때마다 호출될 로직을 작성합니다.
-          },
-          // 선택된 아이템의 아이콘 색상을 설정합니다.
+          onTap: (int index) {},
           selectedItemColor: Colors.blue,
-          // 선택되지 않은 아이템의 아이콘 색상을 설정합니다.
           unselectedItemColor: Colors.grey,
+          selectedFontSize: 0, // 선택된 아이템의 텍스트 크기를 0으로 설정
+          unselectedFontSize: 0, // 선택되지 않은 아이템의 텍스트 크기를 0으로 설정
+
         ),
       ),
     );
