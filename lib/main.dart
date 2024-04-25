@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:cappp/login.dart';
+import 'package:cappp/navigation_page/chat.dart';
+import 'package:cappp/navigation_page/like.dart';
+import 'package:cappp/navigation_page/write.dart';
+import 'package:cappp/navigation_page/person.dart';
 import 'package:http/http.dart' as http;
 
 class Photo {
