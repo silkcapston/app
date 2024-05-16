@@ -59,7 +59,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin { // 
       // 메시지 페이지로 이동
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => ChatPage()),
+          MaterialPageRoute(builder: (context) => LiveChatList(socket: _io.Socket,)),
         );
         break;
       case 4:
