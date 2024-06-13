@@ -3,6 +3,11 @@ import 'package:cappp/navigation_page/chat.dart';
 import 'package:cappp/navigation_page/like.dart';
 import 'package:cappp/navigation_page/write.dart';
 import 'package:cappp/navigation_page/person.dart';
+import 'package:cappp/navigation_page/main.dart';
+import 'package:cappp/sangs.dart';
+import 'package:cappp/search.dart';
+import 'package:cappp/login.dart';
+
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);

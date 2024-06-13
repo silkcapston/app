@@ -20,7 +20,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('로그인'),
+        title: Text(''),
       ),
       body: Center(
         child: LoginForm(),
@@ -39,7 +39,7 @@ class LoginForm extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 16.0),
           child: TextField(
             decoration: InputDecoration(
-              labelText: '이메일',
+              labelText: '아이디',
             ),
           ),
         ),

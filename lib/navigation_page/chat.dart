@@ -127,7 +127,7 @@ class _LiveChatListState extends State<LiveChatList> {
               message: _messageList[index].MG,
               empFlag: false,
               isPMO: false)
-              : Container(); // 관리자 여부에 따른 처리를 여기에 추가해주세요.
+              : Container();
         },
       ),
     );
