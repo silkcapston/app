@@ -11,7 +11,7 @@ class UserProfileScreen extends StatelessWidget {
         children: [
           ListTile(
             leading: CircleAvatar(
-              backgroundImage: AssetImage('assets/profile_picture.png'),
+              backgroundImage: AssetImage('assets/profile_picture.png'), // 프로필 사진 경로
             ),
             title: Text('User_1'),
             subtitle: Text('자기 소개를 입력하세요'),
